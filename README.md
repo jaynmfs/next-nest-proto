@@ -2,6 +2,13 @@
 
 Run both together
 
+## Prerequisites
+
+- remove ".dist" from all env file
+- If you need to use migration, rename "ormconfig-dist.json" to "ormconfig.json"
+
+## Let's get started
+
 ```bash
 # development
 npm run start:dev

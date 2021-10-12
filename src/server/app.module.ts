@@ -4,6 +4,7 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
 import { ThrottlerModule } from '@nestjs/throttler';
 import { CustomConfigModule } from './modules/custom-config/custom-config.module';
 import { NextModule } from './modules/next/next.module';
+import { DatabaseModule } from './modules/database/database.module';
 
 @Module({
   imports: [
@@ -20,6 +21,7 @@ import { NextModule } from './modules/next/next.module';
       },
       inject: [ConfigService],
     }),
+    DatabaseModule,
   ],
   controllers: [],
   providers: [],

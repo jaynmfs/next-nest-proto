@@ -43,3 +43,6 @@ lerna-debug.log*
 /out/
 
 package-lock.json
+
+# TypeOrm
+ormconfig.json

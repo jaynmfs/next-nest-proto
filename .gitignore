@@ -41,3 +41,5 @@ lerna-debug.log*
 # next.js
 /.next/
 /out/
+
+package-lock.json

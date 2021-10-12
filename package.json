@@ -1,8 +1,12 @@
 {
   "name": "next-nest-proto",
   "version": "0.0.1",
-  "description": "",
-  "author": "",
+  "description": "Next.js + NestJS Prototype",
+  "author": {
+    "name": "Jayn Marfaresys",
+    "email": "jane_marfaresys@outlook.com",
+    "url": "https://github.com/jaynmfs/next-nest-proto"
+  },
   "private": true,
   "license": "UNLICENSED",
   "scripts": {

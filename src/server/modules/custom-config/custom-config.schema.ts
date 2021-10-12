@@ -15,6 +15,12 @@ export const customConfigSchema = Joi.object({
   THROTTLER_TTL: Joi.number().default(60),
   THROTTLER_LIMIT: Joi.number().default(10),
 
+  MYSQL_HOST: Joi.string().default('127.0.0.1'),
+  MYSQL_PORT: Joi.number().port().default(3306),
+  MYSQL_USERNAME: Joi.string().required(),
+  MYSQL_PASSWORD: Joi.string().required(),
+  MYSQL_DATABASE: Joi.string().required(),
+
   /**
    * TODO: For more env, specific type here to validate type of each env
    */

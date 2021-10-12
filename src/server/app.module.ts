@@ -2,6 +2,7 @@ import { Module } from '@nestjs/common';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { ThrottlerModule } from '@nestjs/throttler';
 import { CustomConfigModule } from './modules/custom-config/custom-config.module';
+import { DatabaseModule } from './modules/database/database.module';
 
 @Module({
   imports: [
@@ -16,6 +17,7 @@ import { CustomConfigModule } from './modules/custom-config/custom-config.module
       },
       inject: [ConfigService],
     }),
+    DatabaseModule,
   ],
   controllers: [],
   providers: [],
